@@ -6,7 +6,7 @@ Config::register('db.default', array(
     'charset'        => 'utf8mb4',
     'host'           => 'testingdb.cnurlrknw76w.us-west-2.rds.amazonaws.com',
     'user'           => 'admin',
-    'password'	 => 'xepxub-danwat-2qAxfi',
+    'password'	 => '',
     'schema'         => 'georgianschool',
     'prefix'         => '',
     'options'        => NULL,
