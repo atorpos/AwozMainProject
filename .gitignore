@@ -1,7 +1,7 @@
 .gitignore
 .idea
 config/*
-config/credential.php
+/config/credential.php
 /config/school.awoz.co/config.php
 /config/work.awoz.co/config.php
 /config/api.awoz.co/config.php
