@@ -6,3 +6,4 @@ config/*
 /config/work.awoz.co/config.php
 /config/api.awoz.co/config.php
 /config/common.php
+/public_html/assets/*

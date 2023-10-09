@@ -6,7 +6,7 @@ Config::register('core', array(
     'timezone'		 => 'Asia/Hong_Kong',
     'charset'		 => 'utf-8',
     'mode'			 => 'web-api',
-    'default_entry'	 => 'admin',
+    'default_entry'	 => 'api',
     'stage'			 => 'live',
 //	'shared_entry'	 => 'share',
 ));

@@ -3,31 +3,11 @@
 
 use \LT\Config;
 
-require_once 'common.php';
-
-Config::register('mui', array(
-    'enabled' => FALSE,
-    'default' => 'en',
-    'langs' => array(
-        'en' => 'English',
-        'zh-tw' => '台灣中文',
-        'fn' => 'French'
-    ),
-    'replaces' => array(
-        'zh' => 'zh-cn',
-        'tc' => 'zh-tw',
-        'sc' => 'zh-cn',
-    ),
-    'flags' => array(
-        'en' => 'us',
-        'zh-tw' => 'tw',
-        'zh-cn' => 'cn',
-    ),
-));
-
 Config::register('rbac', array(
-    'app_id' => '1',
+    'app_id' => '2',
 ));
+
+require_once 'common.php';
 
 Config::register('route', [
     '#^/payment/booth/create$#' => '/payment/booth/edit',
