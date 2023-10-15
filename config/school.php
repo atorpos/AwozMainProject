@@ -36,5 +36,6 @@ Config::register('route', [
     '#^/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/verify/?$#' => '/settings/user/verify?token=$1',
     '#^/settings/user/verify/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/?$#' => '/settings/user/verify?token=$1',
     '#^/settings/user/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})/?$#' => '/settings/user/edit?token=$1',
-    '#^/merchant/management/(.{36})/?$#' => '/merchant/management/edit?token=$1'
+    '#^/merchant/management/(.{36})/?$#' => '/merchant/management/edit?token=$1',
+    '#^/comp1006/active-user-details/([a-f0-9]{8}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{4}-[a-f0-9]{12})?$#' => '/comp1006/active-user-details/index?token=$1'
 ]);
