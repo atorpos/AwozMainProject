@@ -62,12 +62,12 @@ class ActiveFitness extends Model
 
         foreach ($this->_attributes as $_name => $_value) {
             $attribute = ActiveFitnessAttribute::findOne([
-                'order_id' => $this->id,
+                'active_fitness_id' => $this->id,
                 'name'        => $_name,
             ]);
             if (!$attribute) {
                 $attribute              = new ActiveFitnessAttribute();
-                $attribute->order_id = $this->id;
+                $attribute->active_fitness_id = $this->id;
                 $attribute->name        = $_name;
             }
             $attribute->value          = $_value;

@@ -28,6 +28,18 @@ class ActiveClient extends Model
     private $_attributes = [];
 
     /**
+     * @param string $token
+     * @return \static
+     */
+
+    public static function findByToken($token){
+        return self::find([
+           'token'  =>  $token
+        ]);
+    }
+
+
+    /**
      *
      * @param string $name
      * @return false|string
@@ -65,12 +77,12 @@ class ActiveClient extends Model
 
         foreach ($this->_attributes as $_name => $_value) {
             $attribute = ActiveClientAttribute::findOne([
-                'order_id' => $this->id,
+                'active_client_id' => $this->id,
                 'name'        => $_name,
             ]);
             if (!$attribute) {
                 $attribute              = new ActiveClientAttribute();
-                $attribute->order_id = $this->id;
+                $attribute->active_client_id = $this->id;
                 $attribute->name        = $_name;
             }
             $attribute->value          = $_value;

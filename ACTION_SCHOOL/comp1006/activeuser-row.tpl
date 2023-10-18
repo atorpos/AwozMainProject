@@ -7,14 +7,14 @@
     <td class="d-flex align-items-center">
         <!--begin:: Avatar -->
         <div class="symbol symbol-circle symbol-50px overflow-hidden me-3">
-            <a href="../../demo1/dist/apps/user-management/users/view.html">
+            <a href="active-user-details/index?token={$_active_user['token']}">
                 <div class="symbol-label fs-3 bg-light-danger text-danger">M</div>
             </a>
         </div>
         <!--end::Avatar-->
         <!--begin::User details-->
         <div class="d-flex flex-column">
-            <a href="../../demo1/dist/apps/user-management/users/view.html"
+            <a href="active-user-details/index?token={$_active_user['token']}"
                class="text-gray-800 text-hover-primary mb-1">{$_active_user['first_name']}</a>
             <span>{$_active_user['email']}</span>
         </div>

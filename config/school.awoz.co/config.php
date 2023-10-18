@@ -4,7 +4,7 @@
 use LT\Config;
 
 Config::register('core', array(
-    'timezone' => 'Asia/Hong_Kong',
+    'timezone' => 'America/New_York',
     'charset' => 'utf-8',
     'mode' => 'web',
     'default_entry' => 'school',
