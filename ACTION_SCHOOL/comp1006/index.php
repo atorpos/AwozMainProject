@@ -14,6 +14,8 @@ class Index extends \AW\Action\Admin {
        $active_user = \AW\ActiveClient::find();
        $this->view->assign('active_user', $active_user);
 
+//       set_error_handler("customErrorHandle");
+
     }
 
     public function post()

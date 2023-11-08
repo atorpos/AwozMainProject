@@ -207,7 +207,7 @@ class Index extends \AW\Action {
                 },
                 y: {
                     formatter: function (val) {
-                        return '$' + val + ' thousands'
+                        return 'Avg' + val + ' BPM'
                     }
                 }
             },
