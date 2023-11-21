@@ -2,7 +2,7 @@
 
 namespace LT\RBAC;
 
-class User extends \PA\Model {
+class User extends \AW\Model {
 
 	protected static $_table = 'rbac_user';
 

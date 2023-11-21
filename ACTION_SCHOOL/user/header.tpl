@@ -41,11 +41,11 @@
             <div class="d-flex flex-center flex-lg-start flex-column">
                 <!--begin::Logo-->
                 <a href="../../demo1/dist/index.html" class="mb-7">
-                    <img alt="Logo" src="/assets/media/logos/custom-3.svg" />
+                    <img alt="Logo" src="/assets/media/logos/awoz_logo.png" style="max-height: 74px" />
                 </a>
                 <!--end::Logo-->
                 <!--begin::Title-->
-                <h2 class="text-white fw-normal m-0">OP's AWOZ site</h2>
+                <h2 class="text-white fw-normal m-0">OP's PORTAL</h2>
                 <!--end::Title-->
             </div>
             <!--begin::Aside-->

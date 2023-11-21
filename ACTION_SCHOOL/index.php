@@ -3,7 +3,9 @@
 
     use \LT\DB;
 
-    class Index extends \AW\Action {
+    use \AW\Enum;
+
+    class Index extends \AW\Action\Authenticated {
 
         public function get() {
             $this->view->assign('testinf', 'testing');
