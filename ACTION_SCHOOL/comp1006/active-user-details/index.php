@@ -42,7 +42,7 @@ class Index extends \AW\Action {
             $active_group = 'Self-Motivated Swimming club';
         }
 
-
+        $this->view->assign('token', $input);
         $this->view->assign('user_name', $user_name);
         $this->view->assign('telephone', $telephone);
         $this->view->assign('email', $email);

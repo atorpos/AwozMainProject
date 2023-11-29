@@ -34,7 +34,8 @@
 
 <!--begin::Javascript-->
 <script>var hostUrl = "/assets/";</script>
-
+<script src="/assets/plugins/global/plugins.bundle.js"></script>
+<script src="/assets/js/scripts.bundle.js"></script>
 
 <!--end::Global Javascript Bundle-->
 <!--begin::Vendors Javascript(used for this page only)-->
@@ -46,6 +47,9 @@
 <script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
 <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
 <!--end::Vendors Javascript-->
+<!--begin::For fileupload only-->
+<script src="/assets/js/custom/apps/file-manager/list.js"></script>
+<!--end::For fileupload only-->
 <!--begin::Custom Javascript(used for this page only)-->
 <script src="/assets/js/widgets.bundle.js"></script>
 <script src="/assets/js/custom/widgets.js"></script>
@@ -56,7 +60,7 @@
 <script src="/assets/js/custom/utilities/modals/create-project/settings.js"></script>
 <script src="/assets/js/custom/utilities/modals/create-project/team.js"></script>
 <script src="/assets/js/custom/utilities/modals/create-project/targets.js"></script>
-<script src="/assets/js/custom/utilities/modals/create-project/files.js"></script>
+{*<script src="/assets/js/custom/utilities/modals/create-project/files.js"></script>*}
 <script src="/assets/js/custom/utilities/modals/create-project/complete.js"></script>
 <script src="/assets/js/custom/utilities/modals/create-project/main.js"></script>
 <script src="/assets/js/custom/utilities/modals/create-app.js"></script>
@@ -66,5 +70,6 @@
 <!--end::Custom Javascript-->
 <!--end::Javascript-->
 <svg id="SvgjsSvg1001" width="2" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev" style="overflow: hidden; top: -100%; left: -100%; position: absolute; opacity: 0;" aria-hidden="true"><defs id="SvgjsDefs1002"></defs><polyline id="SvgjsPolyline1003" points="0,0"></polyline><path id="SvgjsPath1004" d="M0 0 "></path></svg>
+<script src="/assets/plugins/custom/fslightbox/fslightbox.bundle.js"></script>
 </body>
 </html>

@@ -6,7 +6,7 @@
                 <!--begin::Wrapper-->
                 <div class="d-flex flex-center flex-column flex-column-fluid px-lg-10 pb-15 pb-lg-20">
                     <!--begin::Form-->
-                    <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="../../demo1/dist/authentication/layouts/creative/sign-in.html" action="#" method="post">
+                    <form class="form w-100" novalidate="novalidate" id="kt_sign_up_form" data-kt-redirect-url="/user/sign-in" action="/user/sign-up" method="post">
                         <!--begin::Heading-->
                         <div class="text-center mb-11">
                             <!--begin::Title-->

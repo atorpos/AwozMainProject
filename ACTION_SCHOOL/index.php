@@ -10,5 +10,10 @@
         public function get() {
             $this->view->assign('testinf', 'testing');
         }
+
+        public function post()
+        {
+            $this->view->noOutput();
+        }
     }
 

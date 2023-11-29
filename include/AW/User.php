@@ -125,11 +125,19 @@ class User extends \LT\RBAC\User
 
     }
 
-    public static function _authenticateLog($userName, $merchant_id = null, $return, $ip, $userAgent) {
+    private static function _authenticateLog($userName, $merchant_id = null, $return, $ip, $userAgent)
+    {
+        $history = new \AW\UserAuthenticateHistory();
+        $history->username = $userName;
+        $history->merchant_id = $merchant_id;
+        $history->message = $return === TRUE ? NULL : $return;
+        $history->result = $return === TRUE ? 1 : 0;
+        $history->ip = $ip;
+        $history->user_agent = $userAgent;
+        $history->url = \LT::url();
+        $history->save();
 
-
-
-
+        return $return;
     }
 
 }
